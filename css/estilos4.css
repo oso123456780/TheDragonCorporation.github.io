@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/*Button fixed*/
+
+.chat-button{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background: url(icon.png);
+    background-color: royalblue;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.logo{
+    height: 40%;
+}
+
+.menu-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 14px;
+    margin-left: 2.5em;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.menu-item:hover{
+    color: ;
+}
+
+.highlight{
+    color: #0075fa;
+}
+
+.image-container{
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Imagen2.png);
+    background-size: auto 100vw;
+    background-position: top left;
+    animation: bg-movement 40s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bg-movement{
+    0%{
+        background-position: top left;
+    }
+    50%{
+        background-position: bottom right;
+    }
+    100%{
+        background-position: top left;
+    }
+}
+
+.page-title{
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: 50px;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+}
+
+.post{
+    font-size: 20px;
+    width: 70%;
+    margin: 5rem auto;
+    line-height: 28px;
+    color: white;
+}
+
+.fund{
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: px;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    margin: 5rem auto;
+    color: white;
+}
